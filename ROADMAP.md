@@ -1,7 +1,7 @@
 # MacNite Roadmap
 
 ## Phase 1 — Foundation & Design:
-- [ ] Finalize the `applist.json` schema
+- [x] Finalize the `applist.json` schema
 - [ ] Design the website's output `selection.json` schema
 - [ ] Decide on your config hosting solution (Cloudflare Workers, Vercel, Supabase, etc.)
 - [ ] Sketch out the website UI (categories, checkboxes, install button)
