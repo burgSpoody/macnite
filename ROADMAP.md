@@ -1,12 +1,12 @@
 # MacNite Roadmap
 
 ## Phase 1 — Foundation & Design:
-- [x] Finalize the `applist.json` schema
-- [ ] Design the website's output `selection.json` schema
-- [ ] Decide on your config hosting solution (Cloudflare Workers, Vercel, Supabase, etc.)
-- [ ] Sketch out the website UI (categories, checkboxes, install button)
-- [ ] Sketch out the Mac app UI (app list, progress bars, install log)
-- [ ] Choose your app name, URL scheme (`macnite://`), and bundle ID
+- [x] Finalizing the `applist.json` schema
+- [x] Designing the website's output `selection.json` schema
+- [x] Deciding on the config hosting solution
+- [x] Sketching out the website UI (categories, checkboxes, install button)
+- [ ] Sketching out the Mac app UI (app list, progress bars, install log)
+- [x] Choosing app name, URL scheme (`macnite://`), and bundle ID
 
 ## Phase 2 — The Website:
 - [ ] Build the category + app selection UI
