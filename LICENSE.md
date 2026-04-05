@@ -1,6 +1,7 @@
 # MacNite Software License
 
-#### Copyright © 2026 MacNite. All Rights Reserved.
+### Copyright © 2026 MacNite. All Rights Reserved.
+#### For permissions beyond the scope of this license, contact: macnite.email@icloud.com
 
 ## Permission is granted to:
 - View the source code available ONLY in [this repository](https://github.com/burgSpoody/macnite) and [MacNite's website repository](https://github.com/burgSpoody/macnite-website)
@@ -14,6 +15,3 @@
 - Create other products solely based on this code
 - Sublicense, sell or transfer rights to this software
 - Remove or alter this copyright notice
-
-For permissions beyond the scope of this license, contact:
-macnite@icloud.com
