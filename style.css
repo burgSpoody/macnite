@@ -1,0 +1,117 @@
+body {
+    background-color: #0f0f0f;
+}
+.heading {
+    text-shadow: 0.5px 0.5px 8px #ffffe4;
+    font-family: Helvetica Neue, Arial;
+    text-align: center;
+    color: #ffffe4;
+}
+a {
+    text-shadow: 1px 1px 20px;
+    font-family: Helvetica Neue, Arial;
+    color: #5d78ff;
+}
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 6px;
+}
+p {
+    text-shadow: 0.5px 0.5px 7px #ffffe4;
+    font-family: Helvetica Neue, Arial;
+    font-size: 1.1em;
+    text-align: center;
+    color: #ffffe4;
+}
+.category {
+    padding-left: 15px;
+    margin-bottom: 10px;
+    text-shadow: 1px 1px 10px #ffffe4;
+    font-family: Helvetica Neue, Arial;
+    color: #ffffe4;
+}
+.app-grid {
+    text-shadow: 1px 1px 10px #ffffe4;
+    font-family: Helvetica Neue, Arial;
+    color: #ffffe4;
+    display: flex;
+    flex-direction: row;
+    overflow-x: auto;
+    gap: 30px;
+    padding: 10px;
+}
+.app-card {
+    text-shadow: 0.5px 0.5px 5px #ffffe4;
+    font-family: Helvetica Neue, Arial;
+    color: #ffffe4;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+.app-card.selected {
+    position: relative;
+}
+.app-card {
+    opacity: 0.5;
+}
+.app-card.selected {
+    opacity: 1;
+}
+.app-card {
+    opacity: 0.5;
+    cursor: pointer;
+    transition: opacity 0.2s ease;
+}
+.app-card.selected {
+    opacity: 1;
+}
+#selected-count {
+    text-align: center;
+    margin-bottom: 10px;
+    text-shadow: 1px 1px 5px #ffffe4;
+    font-family: Helvetica Neue, Arial;
+    color: #ffffe4;
+}
+#button-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 7px;
+}
+#install-btn {
+    text-shadow: 1px 1px 15px #5d78ff;
+    text-align: center;
+    background-color: #0f0f0f;
+    color: #5d78ff;
+    border: solid;
+    padding: 8px 25px;
+    border-radius: 10px;
+    font-size: 1em;
+    cursor: pointer;
+}
+#install-btn:disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+}
+#launch-macnite {
+    text-shadow: 1px 1px 15px #5d78ff;
+    text-align: center;
+    background-color: #0f0f0f;
+    color: #5d78ff;
+    border: solid;
+    padding: 8px 25px;
+    border-radius: 10px;
+    font-size: 1em;
+    cursor: not-allowed;
+    opacity: 0.4;
+    transition: opacity 0.6s ease;
+}
+#launch-macnite.visible {
+    opacity: 1;
+    cursor: pointer;
+    pointer-events: all;
+}

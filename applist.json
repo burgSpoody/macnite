@@ -1,0 +1,442 @@
+{
+  "categories": [
+    {
+      "id": "browsers",
+      "name": "Browsers",
+      "apps": [
+        {
+          "id": "firefox",
+          "name": "Firefox",
+          "download": "https://download.mozilla.org/?product=firefox-latest&os=osx",
+          "type": "dmg",
+          "bundleId": "org.mozilla.firefox",
+          "description": "Fast and secure web browser"
+        },
+        {
+          "id": "chrome",
+          "name": "Chrome",
+          "download": "https://dl.google.com/chrome/mac/universal/stable/GGRO/googlechrome.dmg",
+          "type": "dmg",
+          "bundleId": "com.google.Chrome",
+          "description": "Free and modern web browser"
+        },
+        {
+          "id": "edge",
+          "name": "Edge",
+          "download": "https://go.microsoft.com/fwlink/?linkid=2069148",
+          "type": "pkg",
+          "bundleId": "com.microsoft.edgemac",
+          "description": "AI-powered web browser"
+        },
+        {
+          "id": "arc",
+          "name": "Arc",
+          "download": "https://releases.arc.net/release/Arc-1.132.1-74390.dmg",
+          "type": "dmg",
+          "bundleId": "company.thebrowser.Browser",
+          "description": "Web browser with a customizable design"
+        },
+        {
+          "id": "brave",
+          "name": "Brave",
+          "download": "https://referrals.brave.com/latest/BRV010/Brave-Browser.dmg",
+          "type": "dmg",
+          "bundleId": "com.brave.Browser",
+          "description": "Privacy-focused web browser"
+        }
+      ]
+    },
+    {
+      "id": "media",
+      "name": "Media",
+      "apps": [
+        {
+          "id": "spotify",
+          "name": "Spotify",
+          "download": "https://download.scdn.co/SpotifyInstaller.zip",
+          "type": "app-installer",
+          "bundleId": "com.spotify.client",
+          "description": "Online music streaming app"
+        },
+        {
+          "id": "vlc",
+          "name": "VLC",
+          "download": "https://mirror.del.albony.in/videolan-ftp/vlc/3.0.23/macosx/vlc-3.0.23-arm64.dmg",
+          "type": "dmg",
+          "bundleId": "org.videolan.vlc",
+          "description": "Media player with wide compatibility"
+        },
+        {
+          "id": "vox",
+          "name": "VOX",
+          "download": "https://cdn.vox.rocks/vox-player/releases/latest/VOX.dmg",
+          "type": "dmg",
+          "bundleId": "com.coppertino.Vox",
+          "description": "Music player with lossless quality support"
+        },
+        {
+          "id": "iina",
+          "name": "IINA",
+          "download": "https://dl.iina.io/IINA.v1.4.1.dmg",
+          "type": "dmg",
+          "bundleId": "com.colliderli.iina",
+          "description": "Modern media player for macOS"
+        },
+        {
+          "id": "obs",
+          "name": "OBS",
+          "download": "https://cdn-fastly.obsproject.com/downloads/obs-studio-32.0.4-macos-apple.dmg",
+          "type": "dmg",
+          "bundleId": "com.obsproject.obs-studio",
+          "description": "Screen-recording and live-streaming software"
+        }
+      ]
+    },
+    {
+      "id": "communication",
+      "name": "Communication",
+      "apps": [
+        {
+          "id": "discord",
+          "name": "Discord",
+          "download": "https://discord.com/api/download?platform=osx",
+          "type": "dmg",
+          "bundleId": "com.hnc.Discord",
+          "description": "Cross-platform text, voice, and video communication app"
+        },
+        {
+          "id": "whatsapp",
+          "name": "WhatsApp",
+          "download": "https://web.whatsapp.com/desktop/mac_native/release",
+          "type": "dmg",
+          "bundleId": "net.whatsapp.WhatsApp",
+          "description": "Communication app for texting and calling"
+        },
+        {
+          "id": "signal",
+          "name": "Signal",
+          "download": "https://updates.signal.org/desktop/signal-desktop-mac-universal-7.87.0.dmg",
+          "type": "dmg",
+          "bundleId": "org.whispersystems.signal-desktop",
+          "description": "Secure communication app"
+        },
+        {
+          "id": "telegram",
+          "name": "Telegram",
+          "download": "https://telegram.org/dl/macos",
+          "type": "dmg",
+          "bundleId": "ru.keepcoder.Telegram",
+          "description": "Powerful cloud-based messaging app"
+        },
+        {
+          "id": "teams",
+          "name": "Teams",
+          "download": "https://go.microsoft.com/fwlink/?linkid=2249065",
+          "type": "pkg",
+          "bundleId": "com.microsoft.teams",
+          "description": "Workspace for communication and collaboration"
+        },
+        {
+          "id": "zoom",
+          "name": "Zoom",
+          "download": "https://zoom.us/client/latest/Zoom.pkg",
+          "type": "pkg",
+          "bundleId": "us.zoom.xos",
+          "description": "Video conferencing and team collaboration app"
+        },
+        {
+          "id": "slack",
+          "name": "Slack",
+          "download": "https://slack.com/ssb/download-osx-universal",
+          "type": "dmg",
+          "bundleId": "com.tinyspeck.slackmacgap",
+          "description": "AI-powered workplace app"
+        }
+      ]
+    },
+    {
+      "id": "development",
+      "name": "Development",
+      "apps": [
+        {
+          "id": "vscode",
+          "name": "VS Code",
+          "download": "https://vscode.download.prss.microsoft.com/dbazure/download/stable/ce099c1ed25d9eb3076c11e4a280f3eb52b4fbeb/VSCode-darwin-arm64.dmg",
+          "type": "dmg",
+          "bundleId": "com.microsoft.VSCode",
+          "description": "Powerful and extensible code editor"
+        },
+        {
+          "id": "pycharm",
+          "name": "PyCharm",
+          "download": "https://download-cdn.jetbrains.com/python/pycharm-2025.3.2.1-aarch64.dmg",
+          "type": "dmg",
+          "bundleId": "com.jetbrains.pycharm",
+          "description": "Python IDE"
+        },
+        {
+          "id": "idea",
+          "name": "IntelliJ IDEA",
+          "download": "https://download-cdn.jetbrains.com/idea/idea-2025.3.2-aarch64.dmg",
+          "type": "dmg",
+          "bundleId": "com.jetbrains.intellij",
+          "description": "Java and Kotlin IDE"
+        },
+        {
+          "id": "webstorm",
+          "name": "WebStorm",
+          "download": "https://download-cdn.jetbrains.com/webstorm/WebStorm-2025.3.2-aarch64.dmg",
+          "type": "dmg",
+          "bundleId": "com.jetbrains.WebStorm",
+          "description": "Web development IDE"
+        },
+        {
+          "id": "clion",
+          "name": "CLion",
+          "download": "https://download-cdn.jetbrains.com/cpp/CLion-2025.3.2-aarch64.dmg",
+          "type": "dmg",
+          "bundleId": "com.jetbrains.CLion",
+          "description": "C and C++ IDE"
+        },
+        {
+          "id": "zed",
+          "name": "Zed",
+          "download": "https://release-assets.githubusercontent.com/github-production-release-asset/340547520/d088d30f-f64a-423c-b1a5-dcde35057d09?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-02-04T02%3A13%3A02Z&rscd=attachment%3B+filename%3DZed-aarch64.dmg&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-02-04T01%3A12%3A59Z&ske=2026-02-04T02%3A13%3A02Z&sks=b&skv=2018-11-09&sig=5ykRRpXwO5f%2BkHTmj9iRLWcz27RqmhXvxNkKacUdEA0%3D&jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmVsZWFzZS1hc3NldHMuZ2l0aHVidXNlcmNvbnRlbnQuY29tIiwia2V5Ijoia2V5MSIsImV4cCI6MTc3MDE3MTM4NSwibmJmIjoxNzcwMTY3Nzg1LCJwYXRoIjoicmVsZWFzZWFzc2V0cHJvZHVjdGlvbi5ibG9iLmNvcmUud2luZG93cy5uZXQifQ.jRJ0jisrCnn_ljrdfien1SfUavlkO_Z0OF4yEXBMDRY&response-content-disposition=attachment%3B%20filename%3DZed-aarch64.dmg&response-content-type=application%2Foctet-stream",
+          "type": "dmg",
+          "bundleId": "dev.zed.Zed",
+          "description": "Fast and lightweight code editor"
+        },
+        {
+          "id": "github",
+          "name": "GitHub",
+          "download": "https://desktop.githubusercontent.com/releases/3.5.4-9dfb8d8d/GitHubDesktop-arm64.zip",
+          "type": "zip",
+          "bundleId": "com.github.GitHub",
+          "description": "Cloud platform for managing and collaborating code"
+        }
+      ]
+    },
+    {
+      "id": "creativity",
+      "name": "Creativity",
+      "apps": [
+        {
+          "id": "canva",
+          "name": "Canva",
+          "download": "https://desktop-release.canva.com/Canva-1.120.0-universal.dmg",
+          "type": "dmg",
+          "bundleId": "com.canva.canvaeditor",
+          "description": "Online graphic design tool"
+        },
+        {
+          "id": "gimp",
+          "name": "GIMP",
+          "download": "https://2.mirrors.in.sahilister.net/gimp/gimp/v3.0/macos/gimp-3.0.8-arm64-1.dmg",
+          "type": "dmg",
+          "bundleId": "org.gimp.gimp",
+          "description": "Image manipulation and photo editing software"
+        },
+        {
+          "id": "affinity",
+          "name": "Affinity",
+          "download": "https://downloads.affinity.studio/Affinity.dmg",
+          "type": "dmg",
+          "bundleId": "com.canva.affinity",
+          "description": "All-in-one creative design software"
+        },
+        {
+          "id": "shotcut",
+          "name": "Shotcut",
+          "download": "https://excellmedia.dl.sourceforge.net/project/shotcut/v26.1.30/shotcut-macos-26.1.30.dmg?viasf=1",
+          "type": "dmg",
+          "bundleId": "com.Meltytech.Shotcut",
+          "description": "Cross-platform video editor"
+        },
+        {
+          "id": "audacity",
+          "name": "Audacity",
+          "download": "https://release-assets.githubusercontent.com/github-production-release-asset/32921736/225cb6f7-1148-434d-9613-29e3fc93ce30?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-02-04T02%3A30%3A06Z&rscd=attachment%3B+filename%3Daudacity-macOS-3.7.7-arm64.dmg&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-02-04T01%3A29%3A55Z&ske=2026-02-04T02%3A30%3A06Z&sks=b&skv=2018-11-09&sig=XE0bIwrvGOp8ZkidHcrsvxbtjzEFVmcJNda66ZqH%2Bh8%3D&jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmVsZWFzZS1hc3NldHMuZ2l0aHVidXNlcmNvbnRlbnQuY29tIiwia2V5Ijoia2V5MSIsImV4cCI6MTc3MDE3MDc2OSwibmJmIjoxNzcwMTY4OTY5LCJwYXRoIjoicmVsZWFzZWFzc2V0cHJvZHVjdGlvbi5ibG9iLmNvcmUud2luZG93cy5uZXQifQ.bfa0VlvFGi4fF51XdhBw4OYJv-ErDQLGAjWTzWdV8bM&response-content-disposition=attachment%3B%20filename%3Daudacity-macOS-3.7.7-arm64.dmg&response-content-type=application%2Foctet-stream",
+          "type": "dmg",
+          "bundleId": "org.audacityteam.audacity",
+          "description": "Audio editor and recorder"
+        },
+        {
+          "id": "blender",
+          "name": "Blender",
+          "download": "https://ftp.halifax.rwth-aachen.de/blender/release/Blender5.0/blender-5.0.1-macos-arm64.dmg",
+          "type": "dmg",
+          "bundleId": "org.blenderfoundation.blender",
+          "description": "Software for 3D modelling, rendering, and animation"
+        }
+      ]
+    },
+    {
+      "id": "games",
+      "name": "Games",
+      "apps": [
+        {
+          "id": "steam",
+          "name": "Steam",
+          "download": "https://cdn.fastly.steamstatic.com/client/installer/steam.dmg",
+          "type": "dmg",
+          "bundleId": "com.valvesoftware.steam",
+          "description": "Digital store for purchasing, downloading and playing games"
+        },
+        {
+          "id": "epic",
+          "name": "Epic Games",
+          "download": "https://download.epicgames.com/Builds/UnrealEngineLauncher/Installers/Mac/EpicInstaller-19.1.5.dmg?launcherfilename=EpicInstaller-19.1.5.dmg",
+          "type": "dmg",
+          "bundleId": "com.epicgames.EpicGamesLauncher",
+          "description": "Digital store for purchasing, downloading and playing games"
+        },
+        {
+          "id": "minecraft",
+          "name": "Minecraft",
+          "download": "https://launcher.mojang.com/download/Minecraft.dmg",
+          "type": "dmg",
+          "bundleId": "com.mojang.minecraftlauncher",
+          "description": "Official launcher for Minecraft"
+        }
+      ]
+    },
+    {
+      "id": "productivity",
+      "name": "Productivity",
+      "apps": [
+        {
+          "id": "chatgpt",
+          "name": "ChatGPT",
+          "download": "https://persistent.oaistatic.com/sidekick/public/ChatGPT.dmg",
+          "type": "dmg",
+          "bundleId": "com.openai.chat",
+          "description": "General-purpose AI chatbot"
+        },
+        {
+          "id": "claude",
+          "name": "Claude",
+          "download": "https://downloads.claude.ai/releases/darwin/universal/1.1.5368/Claude-d12d0218c6c7bc46d52919117bd57508c591a8ad.dmg",
+          "type": "dmg",
+          "bundleId": "com.anthropic.claudefordesktop",
+          "description": "AI chatbot for advanced tasks"
+        },
+        {
+          "id": "libreoffice",
+          "name": "LibreOffice",
+          "download": "https://mirrors.ravidwivedi.in/tdf/libreoffice/stable/26.2.0/mac/aarch64/LibreOffice_26.2.0_MacOS_aarch64.dmg",
+          "type": "dmg",
+          "bundleId": "org.libreoffice.script",
+          "description": "Office suite with wide format compatibility"
+        },
+        {
+          "id": "notion",
+          "name": "Notion",
+          "download": "https://desktop-release.notion-static.com/Notion-7.3.1-universal.dmg",
+          "type": "dmg",
+          "bundleId": "notion.id",
+          "description": "Workspace for notes, tasks, and projects"
+        },
+        {
+          "id": "obsidian",
+          "name": "Obsidian",
+          "download": "https://release-assets.githubusercontent.com/github-production-release-asset/262342594/b648c8a6-697a-4e9c-9976-97458df81cd9?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-02-04T14%3A09%3A43Z&rscd=attachment%3B+filename%3DObsidian-1.11.5.dmg&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-02-04T13%3A08%3A49Z&ske=2026-02-04T14%3A09%3A43Z&sks=b&skv=2018-11-09&sig=ChkxPdTNth6uM4qWEk9u2VlIFZyiO%2BpkBdf9bzVw2KI%3D&jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmVsZWFzZS1hc3NldHMuZ2l0aHVidXNlcmNvbnRlbnQuY29tIiwia2V5Ijoia2V5MSIsImV4cCI6MTc3MDIxNTA1MywibmJmIjoxNzcwMjExNDUzLCJwYXRoIjoicmVsZWFzZWFzc2V0cHJvZHVjdGlvbi5ibG9iLmNvcmUud2luZG93cy5uZXQifQ.FoAL7sbOKSUhnAZYmOZy1HkqPJnycZWvW5eosazmOo4&response-content-disposition=attachment%3B%20filename%3DObsidian-1.11.5.dmg&response-content-type=application%2Foctet-stream",
+          "type": "dmg",
+          "bundleId": "md.obsidian",
+          "description": "Markdown note-taking app"
+        }
+      ]
+    },
+    {
+      "id": "utilities",
+      "name": "Utilities",
+      "apps": [
+        {
+          "id": "etcher",
+          "name": "balenaEtcher",
+          "download": "https://release-assets.githubusercontent.com/github-production-release-asset/45055693/edff89ae-e510-4dd1-8264-3ef87367c866?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-02-04T16%3A14%3A48Z&rscd=attachment%3B+filename%3DbalenaEtcher-2.1.4-arm64.dmg&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-02-04T15%3A14%3A07Z&ske=2026-02-04T16%3A14%3A48Z&sks=b&skv=2018-11-09&sig=GOTcdJCgZCsyMl12mGHUTnR7ihGSRCMlsTsdFCdQcX8%3D&jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmVsZWFzZS1hc3NldHMuZ2l0aHVidXNlcmNvbnRlbnQuY29tIiwia2V5Ijoia2V5MSIsImV4cCI6MTc3MDIyMjIzNCwibmJmIjoxNzcwMjE4NjM0LCJwYXRoIjoicmVsZWFzZWFzc2V0cHJvZHVjdGlvbi5ibG9iLmNvcmUud2luZG93cy5uZXQifQ.G5RqmHYfHeAKHheW_RTeonG9m8sKa8iHDz-gPV6rF_E&response-content-disposition=attachment%3B%20filename%3DbalenaEtcher-2.1.4-arm64.dmg&response-content-type=application%2Foctet-stream",
+          "type": "dmg",
+          "bundleId": "io.balena.etcher",
+          "description": "Tool to flash operating systems to USB drives"
+        },
+        {
+          "id": "virtualbox",
+          "name": "VirtualBox",
+          "download": "https://download.virtualbox.org/virtualbox/7.2.6/VirtualBox-7.2.6-172322-macOSArm64.dmg",
+          "type": "dmg-pkg",
+          "bundleId": "org.virtualbox.app.VirtualBox",
+          "description": "Software to run virtual machines"
+        },
+        {
+          "id": "flux",
+          "name": "f.lux",
+          "download": "https://macflux.b-cdn.net/Flux.zip",
+          "type": "app",
+          "bundleId": "org.herf.Flux",
+          "description": "Adjusts screen color temperature to reduce eye strain"
+        },
+        {
+          "id": "keka",
+          "name": "Keka",
+          "download": "https://release-assets.githubusercontent.com/github-production-release-asset/73220421/c8cc55a8-b8d5-4a1f-a5da-3e039ee526b2?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-02-06T01%3A53%3A27Z&rscd=attachment%3B+filename%3DKeka-1.6.0.dmg&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-02-06T00%3A52%3A44Z&ske=2026-02-06T01%3A53%3A27Z&sks=b&skv=2018-11-09&sig=0G6PqjFBJRYF0WkWGIzlIyfZybHigamIa%2F%2BbEKYQctw%3D&jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmVsZWFzZS1hc3NldHMuZ2l0aHVidXNlcmNvbnRlbnQuY29tIiwia2V5Ijoia2V5MSIsImV4cCI6MTc3MDM0MTU4NSwibmJmIjoxNzcwMzM5Nzg1LCJwYXRoIjoicmVsZWFzZWFzc2V0cHJvZHVjdGlvbi5ibG9iLmNvcmUud2luZG93cy5uZXQifQ.fK9o_vK9d07m7UURxioFxt8Ex52pobR7HxV_NN2rYWM&response-content-disposition=attachment%3B%20filename%3DKeka-1.6.0.dmg&response-content-type=application%2Foctet-stream",
+          "type": "dmg",
+          "bundleId": "com.aone.keka",
+          "description": "Powerful file archiver"
+        },
+        {
+          "id": "raycast",
+          "name": "Raycast",
+          "download": "https://raycast.com/download",
+          "type": "dmg",
+          "bundleId": "com.raycast.macos",
+          "description": "Keyboard-driven productivity launcher"
+        },
+        {
+          "id": "handbrake",
+          "name": "HandBrake",
+          "download": "https://release-assets.githubusercontent.com/github-production-release-asset/41215835/157164f4-01ca-4e16-b0c6-f4ea9797eebb?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-02-05T14%3A39%3A29Z&rscd=attachment%3B+filename%3DHandBrake-1.10.2.dmg&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-02-05T13%3A38%3A35Z&ske=2026-02-05T14%3A39%3A29Z&sks=b&skv=2018-11-09&sig=N8KeksgzDIFvgxSqX8iSofqAznU1xQWYHKbFYrmVfH4%3D&jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmVsZWFzZS1hc3NldHMuZ2l0aHVidXNlcmNvbnRlbnQuY29tIiwia2V5Ijoia2V5MSIsImV4cCI6MTc3MDMwMTE2NCwibmJmIjoxNzcwMjk5MzY0LCJwYXRoIjoicmVsZWFzZWFzc2V0cHJvZHVjdGlvbi5ibG9iLmNvcmUud2luZG93cy5uZXQifQ.y1qSip62L6J69Km17PT5xHLzcI15vWICNXL7O69zgak&response-content-disposition=attachment%3B%20filename%3DHandBrake-1.10.2.dmg&response-content-type=application%2Foctet-stream",
+          "type": "dmg",
+          "bundleId": "fr.handbrake.HandBrake",
+          "description": "Tool to convert and compress videos"
+        },
+        {
+          "id": "disko",
+          "name": "Disko",
+          "download": "https://release-assets.githubusercontent.com/github-production-release-asset/734076774/8cf005d3-8203-4507-a219-85fed41a16e1?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-02-05T14%3A37%3A20Z&rscd=attachment%3B+filename%3DDisko.app.zip&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-02-05T13%3A37%3A09Z&ske=2026-02-05T14%3A37%3A20Z&sks=b&skv=2018-11-09&sig=zJVF8sZipJAVMoM27Kh06InUeO0o0i%2B2DOSX3wVzqIc%3D&jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmVsZWFzZS1hc3NldHMuZ2l0aHVidXNlcmNvbnRlbnQuY29tIiwia2V5Ijoia2V5MSIsImV4cCI6MTc3MDMwMTI1NCwibmJmIjoxNzcwMjk5NDU0LCJwYXRoIjoicmVsZWFzZWFzc2V0cHJvZHVjdGlvbi5ibG9iLmNvcmUud2luZG93cy5uZXQifQ.qp9_4c98us2LHt_THFH5Wzj46tuttz3cfXCxjWqDq5A&response-content-disposition=attachment%3B%20filename%3DDisko.app.zip&response-content-type=application%2Foctet-stream",
+          "type": "app",
+          "bundleId": "in.robbb.disko",
+          "description": "Disk usage analyzer"
+        }
+      ]
+    },
+    {
+      "id": "security",
+      "name": "Security",
+      "apps": [
+        {
+          "id": "bitwarden",
+          "name": "Bitwarden",
+          "download": "https://release-assets.githubusercontent.com/github-production-release-asset/53538899/5a74700a-b0b8-4ade-8e30-86321fb549f1?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-02-05T14%3A39%3A28Z&rscd=attachment%3B+filename%3DBitwarden-2025.12.1-universal.dmg&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-02-05T13%3A38%3A45Z&ske=2026-02-05T14%3A39%3A28Z&sks=b&skv=2018-11-09&sig=Mpe66fSk2kmDNF7nH3nt4nAu3PuKhEB7Heo0METivb4%3D&jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmVsZWFzZS1hc3NldHMuZ2l0aHVidXNlcmNvbnRlbnQuY29tIiwia2V5Ijoia2V5MSIsImV4cCI6MTc3MDMwMjUzNywibmJmIjoxNzcwMjk4OTM3LCJwYXRoIjoicmVsZWFzZWFzc2V0cHJvZHVjdGlvbi5ibG9iLmNvcmUud2luZG93cy5uZXQifQ.sOmraFL9jwxXKty8BiKpDUZcBk6NgOhUma5KlF4_VsQ&response-content-disposition=attachment%3B%20filename%3DBitwarden-2025.12.1-universal.dmg&response-content-type=application%2Foctet-stream",
+          "type": "dmg",
+          "bundleId": "com.bitwarden.desktop",
+          "description": "Password Manager"
+        },
+        {
+          "id": "malwarebytes",
+          "name": "Malwarebytes",
+          "download": "https://data-cdn.mbamupdates.com/web/mb5_mac/Malwarebytes-Mac-5.20.0.3620.pkg",
+          "type": "pkg",
+          "bundleId": "com.malwarebytes.mbam.frontend.application",
+          "description": "All-in-one cybersecurity software"
+        },
+        {
+          "id": "deadbolt",
+          "name": "Deadbolt",
+          "download": "https://release-assets.githubusercontent.com/github-production-release-asset/200452183/75c16776-de3a-4a8a-8e61-43217cacaa96?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-02-06T01%3A50%3A46Z&rscd=attachment%3B+filename%3DDeadbolt-2.0.2-arm64.dmg&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-02-06T00%3A50%3A06Z&ske=2026-02-06T01%3A50%3A46Z&sks=b&skv=2018-11-09&sig=MK3gaA%2Fdd7D9Qx2nxvI0CaMwOiiJtVwJVWaX6vupG30%3D&jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmVsZWFzZS1hc3NldHMuZ2l0aHVidXNlcmNvbnRlbnQuY29tIiwia2V5Ijoia2V5MSIsImV4cCI6MTc3MDM0MTMxOCwibmJmIjoxNzcwMzM5NTE4LCJwYXRoIjoicmVsZWFzZWFzc2V0cHJvZHVjdGlvbi5ibG9iLmNvcmUud2luZG93cy5uZXQifQ.DOwqgsBsDxnXH35YG4ZrrwQV79brujr6y3MpU57T8mo&response-content-disposition=attachment%3B%20filename%3DDeadbolt-2.0.2-arm64.dmg&response-content-type=application%2Foctet-stream",
+          "type": "dmg",
+          "bundleId": "org.alichtman.deadbolt",
+          "description": "File encryptor/decryptor"
+        }
+      ]
+    }
+  ]
+}
