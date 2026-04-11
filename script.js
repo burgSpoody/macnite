@@ -1,107 +1,138 @@
 let hasInteracted = false;
+let allCategories = [];
+let activeFilter = 'all';
+
+// Load app list
 
 fetch('applist.json')
-  .then(response => response.json())
-  .then(data => {
-    generateApps(data);
-    document.getElementById('install-btn').disabled = true;
-  })
+    .then(response => response.json())
+    .then(data => {
+        allCategories = data.categories;
+        renderApps();
+        updateCount();
+    });
+
+// Render apps (respects active filter + search query)
+
+function renderApps() {
+    const query = document.getElementById('search-input').value.toLowerCase().trim();
+    const appSelection = document.getElementById('app-selection');
+    appSelection.innerHTML = '';
+
+    allCategories.forEach(category => {
+        if (activeFilter !== 'all' && category.id !== activeFilter) return;
+
+        const filteredApps = query
+            ? category.apps.filter(app => app.name.toLowerCase().includes(query))
+            : category.apps;
+
+        if (filteredApps.length === 0) return;
+
+        const section = document.createElement('div');
+        section.className = 'category-section';
+
+        const header = document.createElement('div');
+        header.className = 'category';
+        header.innerHTML = `${category.name} <span class="category-count">${filteredApps.length}</span>`;
+        section.appendChild(header);
+
+        const grid = document.createElement('div');
+        grid.className = 'app-grid';
+
+        filteredApps.forEach(app => {
+            const card = document.createElement('div');
+            card.className = 'app-card';
+            card.dataset.id = app.id;
+            card.title = app.description || '';
+
+            // Restore selected state if previously selected
+            const wasSelected = document.querySelector(`.app-card.selected[data-id="${app.id}"]`);
+            if (wasSelected) card.classList.add('selected');
+
+            card.addEventListener('click', () => {
+                hasInteracted = true;
+                card.classList.toggle('selected');
+                updateCount();
+            });
+
+            const icon = document.createElement('img');
+            icon.src = `icons/WebP/${app.id}-dark.webp`;
+            icon.alt = app.name;
+            icon.className = 'app-icon';
+
+            const name = document.createElement('span');
+            name.className = 'app-name';
+            name.textContent = app.name;
+
+            const checkbox = document.createElement('div');
+            checkbox.className = 'app-checkbox';
+
+            card.appendChild(icon);
+            card.appendChild(name);
+            card.appendChild(checkbox);
+            grid.appendChild(card);
+        });
+
+        section.appendChild(grid);
+        appSelection.appendChild(section);
+    });
+}
+
+// Update selected count + button state
 
 function updateCount() {
-  const selectedCards = document.querySelectorAll('.app-card.selected');
-  const count = selectedCards.length;
+    const selectedCards = document.querySelectorAll('.app-card.selected');
+    const count = selectedCards.length;
 
-  document.getElementById('selected-count').textContent =
-    count === 1 ? '1 app selected' : `${count} apps selected`;
+    document.getElementById('selected-count').textContent =
+        count === 1 ? '1 app selected' : `${count} apps selected`;
 
-  document.getElementById('install-btn').disabled = count === 0;
-
-  const allCards = document.querySelectorAll('.app-card');
-
-  if (count === 0 && hasInteracted) {
-    allCards.forEach(card => { card.style.opacity = '0.4'; });
-  } else if (count > 0) {
-    allCards.forEach(card => {
-      card.style.opacity = card.classList.contains('selected') ? '1' : '0.4';
-    });
-  }
+    document.getElementById('install-btn').disabled = count === 0;
 }
 
-function generateApps(data) {
-  const appSelection = document.getElementById('app-selection');
-  appSelection.innerHTML = '';
+//  Category nav filtering
 
-  data.categories.forEach(category => {
-    const categoryDiv = document.createElement('div');
-    categoryDiv.className = 'category';
+document.getElementById('category-nav').addEventListener('click', e => {
+    const item = e.target.closest('.nav-item');
+    if (!item) return;
+    e.preventDefault();
 
-    const categoryTitle = document.createElement('h2');
-    categoryTitle.textContent = category.name;
-    categoryDiv.appendChild(categoryTitle);
+    document.querySelectorAll('.nav-item').forEach(n => n.classList.remove('active'));
+    item.classList.add('active');
 
-    const appGrid = document.createElement('div');
-    appGrid.className = 'app-grid';
-
-    category.apps.forEach(app => {
-      const appCard = document.createElement('div');
-      appCard.className = 'app-card';
-      appCard.dataset.id = app.id;
-      appCard.title = app.description;
-
-      appCard.addEventListener('click', () => {
-        hasInteracted = true;
-        appCard.classList.toggle('selected');
-        updateCount();
-      });
-
-      const img = document.createElement('img');
-      img.src = `icons/WebP/${app.id}-dark.webp`;
-      img.alt = app.name;
-      img.width = 100;
-      img.height = 100;
-
-      const appName = document.createElement('p');
-      appName.textContent = app.name;
-
-      appCard.appendChild(img);
-      appCard.appendChild(appName);
-      appGrid.appendChild(appCard);
-    });
-
-    categoryDiv.appendChild(appGrid);
-    appSelection.appendChild(categoryDiv);
-  });
-}
-
-// Install button — shows the launch button
-document.getElementById('install-btn').addEventListener('click', (e) => {
-  e.stopPropagation();
-
-  const selectedCards = document.querySelectorAll('.app-card.selected');
-  const selectedApps = [];
-  selectedCards.forEach(card => {
-    selectedApps.push(card.dataset.id);
-  });
-
-  console.log(JSON.stringify({ selectedApps: selectedApps }));
-
-  // Enable the launch button
-  document.getElementById('launch-macnite').classList.add('visible');
+    activeFilter = item.dataset.cat;
+    renderApps();
 });
 
-// Launch MacNite button — fires macnite:// with app list in URL
-document.getElementById('launch-macnite').addEventListener('click', (e) => {
-  e.stopPropagation();
+// Search filtering
 
-  const launchBtn = document.getElementById('launch-macnite');
-  if (!launchBtn.classList.contains('visible')) return;
+document.getElementById('search-input').addEventListener('input', () => {
+    renderApps();
+});
 
-  const selectedCards = document.querySelectorAll('.app-card.selected');
-  const selectedApps = [];
-  selectedCards.forEach(card => {
-    selectedApps.push(card.dataset.id);
-  });
+//  Install button
 
-  const appList = selectedApps.join(',');
-  window.location.href = `macnite://install?apps=${appList}`;
+document.getElementById('install-btn').addEventListener('click', e => {
+    e.stopPropagation();
+
+    const selectedCards = document.querySelectorAll('.app-card.selected');
+    const selectedApps = Array.from(selectedCards).map(card => card.dataset.id);
+
+    console.log(JSON.stringify({ selectedApps }));
+
+    document.getElementById('launch-macnite').classList.add('visible');
+});
+
+// Launch MacNite button
+
+document.getElementById('launch-macnite').addEventListener('click', e => {
+    e.stopPropagation();
+
+    const launchBtn = document.getElementById('launch-macnite');
+    if (!launchBtn.classList.contains('visible')) return;
+
+    const selectedCards = document.querySelectorAll('.app-card.selected');
+    const appList = Array.from(selectedCards).map(card => card.dataset.id).join(',');
+
+    window.location.href = `macnite://install?apps=${appList}`;
 });

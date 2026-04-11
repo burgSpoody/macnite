@@ -1,35 +1,50 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>MacNite</title>
-        <link rel="stylesheet" href="style.css">
-        <link rel="icon" href="assets/macnite-icons/macnite-icon-1024x1024.webp">
-    </head>
-    <body>
-        <main>
-            <section id="hero">
-                <h1 id="h1" class="heading">MacNite</h1>
-                <h2 class="heading">The hassle-free app installer for macOS.</h2>
-                <header>
-                    <nav>
-                        <a href="https://github.com/burgSpoody/MacNite/blob/310f74b5aadcd78860cb0bf9113af39694dc6765/README.md">About</a>
-                        <a href="https://github.com/burgSpoody/MacNite">GitHub</a>
-                        <a href="https://github.com/burgSpoody">burgSpoody</a>
-                        <a href="tutorial.html">How to use MacNite</a>
-                    </nav>
-                </header>
-                <p>Install all your apps without downloading and installing them individually.</p>
-            <p>Click any app icon to select it for installation.</p>
-            <section id="app-selection"></section>
-            <br>
-            <section id="install">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MacNite</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="assets/macnite-icons/macnite-icon-256x256.png">
+</head>
+<body>
+    <div id="layout">
+        <aside id="sidebar">
+            <div id="sidebar-logo">
+                <h1 id="logo">MacNite</h1>
+                <p id="logo-sub">Bulk app installer for macOS</p>
+            </div>
+            <div id="sidebar-search">
+                <input type="text" id="search-input" placeholder="Search apps..." />
+            </div>
+            <nav id="category-nav">
+                <a href="#" class="nav-item active" data-cat="all">All Apps</a>
+                <a href="#" class="nav-item" data-cat="browsers">Browsers</a>
+                <a href="#" class="nav-item" data-cat="media">Media</a>
+                <a href="#" class="nav-item" data-cat="communication">Communication</a>
+                <a href="#" class="nav-item" data-cat="development">Development</a>
+                <a href="#" class="nav-item" data-cat="creativity">Creativity</a>
+                <a href="#" class="nav-item" data-cat="games">Games and Launchers</a>
+                <a href="#" class="nav-item" data-cat="productivity">Productivity</a>
+                <a href="#" class="nav-item" data-cat="utilities">Utilities</a>
+                <a href="#" class="nav-item" data-cat="security">Security</a>
+            </nav>
+            <div id="sidebar-links">
+                <a href="https://github.com/burgSpoody/macnite/blob/39415ccf73ca9c73aec534175733faeeba50555a/README.md" target="_blank">About</a>
+                <a href="https://github.com/burgSpoody/macnite" target="_blank">GitHub</a>
+                <a href="https://github.com/burgSpoody" target="_blank">burgSpoody</a>
+                <a href="https://github.com/burgSpoody/macnite?tab=readme-ov-file#how-to-use-macnite" target="_blank">How to use MacNite</a>
+            </div>
+            <div id="sidebar-bottom">
                 <p id="selected-count">0 apps selected</p>
-                <div id="button-row">
-                    <button id="install-btn">Get your MacNite</button>
-                    <button id="launch-macnite">Click after installing MacNite</button>
-                </div>
-            </section>
+                <button id="install-btn" class="button">Get MacNite</button>
+                <button id="launch-macnite" class="button">Click after installing MacNite</button>
+            </div>
+        </aside>
+        <main id="main-content">
+            <section id="app-selection"></section>
         </main>
-        <script src="script.js"></script>
-    </body>
+    </div>
+    <script src="script.js"></script>
+</body>
 </html>
