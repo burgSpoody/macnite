@@ -239,7 +239,7 @@ body {
 .app-card.selected {
   opacity: 1;
   border-color: #5D78FF;
-  background-color: #0F0F0F;
+  background-color: #0E1123;
 }
 
 .app-icon {

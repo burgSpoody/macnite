@@ -3,7 +3,7 @@ let allCategories = [];
 let activeFilter = 'all';
 const selectedApps = new Set();
 
-// ── Load app list ──────────────────────────────────────────────
+//  Load app list 
 
 fetch('applist.json')
     .then(response => response.json())
@@ -13,7 +13,7 @@ fetch('applist.json')
         updateCount();
     });
 
-// ── Render apps (respects active filter + search query) ────────
+//  Render apps (respects active filter + search query) 
 
 function renderApps() {
     const query = document.getElementById('search-input').value.toLowerCase().trim();
@@ -83,7 +83,7 @@ function renderApps() {
     });
 }
 
-// ── Update selected count + button state ───────────────────────
+//  Update selected count + button state 
 
 function updateCount() {
     const count = selectedApps.size;
@@ -94,7 +94,7 @@ function updateCount() {
         document.getElementById('launch-macnite').classList.remove('visible');
     }
 }
-// ── Category nav filtering ─────────────────────────────────────
+//  Category nav filtering 
 
 document.getElementById('category-nav').addEventListener('click', e => {
     const item = e.target.closest('.nav-item');
@@ -108,13 +108,13 @@ document.getElementById('category-nav').addEventListener('click', e => {
     renderApps();
 });
 
-// ── Search filtering ───────────────────────────────────────────
+//  Search filtering 
 
 document.getElementById('search-input').addEventListener('input', () => {
     renderApps();
 });
 
-// ── Install button ─────────────────────────────────────────────
+//  Install button 
 
 document.getElementById('install-btn').addEventListener('click', e => {
     e.stopPropagation();
@@ -124,7 +124,7 @@ document.getElementById('install-btn').addEventListener('click', e => {
     document.getElementById('launch-macnite').classList.add('visible');
 });
 
-// ── Launch MacNite button ──────────────────────────────────────
+//  Launch MacNite button 
 
 document.getElementById('launch-macnite').addEventListener('click', e => {
     e.stopPropagation();
