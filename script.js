@@ -61,7 +61,7 @@ function renderApps() {
             });
 
             const icon = document.createElement('img');
-            icon.src = `icons/WebP/${app.id}-dark.webp`;
+            icon.src = `assets/app-icons/WebP/${app.id}-dark.webp`;
             icon.alt = app.name;
             icon.className = 'app-icon';
 
