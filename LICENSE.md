@@ -4,7 +4,7 @@
 #### For permissions beyond the scope of this license, contact: macnite.email@icloud.com
 
 ## Permission is granted to:
-- View the source code available ONLY in [this repository](https://github.com/burgSpoody/macnite) and [MacNite's website repository](https://github.com/burgSpoody/macnite-website)
+- View the source code available ONLY in [this repository](https://github.com/burgspoody/macnite)
 - Submit contributions as stated so in [CONTRIBUTING.md](CONTRIBUTING.md)
 - Use this software for personal and non-commercial purposes
 - Share and discuss this software with attribution

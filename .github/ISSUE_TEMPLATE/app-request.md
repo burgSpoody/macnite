@@ -1,16 +1,16 @@
 ---
 name: App Request
 about: Request a new app to be added to MacNite
-title: "[APP REQUEST] App Name Here"
+title: "[APP REQUEST] <Replace this with the app name>"
 labels: app-request
 ---
 
-## App Name
+## App Name: 
 
-## App Description (in one line)
+## App Description (in one line): 
 
-## App Category
+## App Category: 
 
-## Why should it be included?
+## Why should it be included?: 
 
-## Additional Notes
+## Additional Notes: 

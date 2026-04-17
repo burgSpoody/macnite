@@ -6,7 +6,7 @@ MacNite is an app installer for macOS that lets the user install the apps they w
 
 ## How to use MacNite
 
-1. Visit [macnite.net](https://burgspoody.github.io/macnite-website)
+1. Visit [burgspoody.github.io/macnite]](https://burgspoody.github.io/macnite-website)
 2. Select the apps you want to install
 3. Click **"Get MacNite"** and the download for the MacNite app will start
 4. Install the MacNite app from the .dmg file and open it
